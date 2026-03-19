@@ -17,9 +17,6 @@
 
 
 ### 安装依赖
-```bash
 # 安装CuPy（CUDA 12.x版本）
 pip install cupy-cuda12x
-
-# 如果无GPU，可使用NumPy版本
-# 将代码开头的 import cupy as np 改为 import numpy as np 即可
+# 若无法使用cupy，将import cupy as np 改成 import numpy as np 即可

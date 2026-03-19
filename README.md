@@ -24,6 +24,8 @@
 ### 数据来源与感谢
 该数据集由 Yann LeCun 的官方网站 http://yann.lecun.com/exdb/mnist/
 
+
+
  # MNIST-numpy 
 
 - This project implements handwritten digit recognition on the MNIST dataset using pure Python code, relying solely on the numpy and gzip libraries
@@ -47,5 +49,14 @@ environment
 - pip install cupy-cuda12x
 - If cupy cannot be used, simply replace "import cupy as np" with "import numpy as np"
 
+
+
 ### Data Source and Acknowledgment 
 - This dataset is sourced from Yann LeCun's official website at http://yann.lecun.com/exdb/mnist/
+
+### 训练结果
+### training results
+- 可以看到，仅需220次迭代，训练集准确率就接近100%，是个不错的训练结果，有利于对手写数字进行识别，同时，测试集稳定在97%左右，模型较为稳定
+- It can be seen that only 220 iterations are needed for the training set accuracy to approach 100%, which is a good training result conducive to the recognition of handwritten digits. Meanwhile, the test set remains stable at around 97%, indicating that the model is relatively stable.
+
+<img width="551" height="499" alt="image" src="https://github.com/user-attachments/assets/111fb064-1d83-41b0-ab8c-eb064af40a3e" />

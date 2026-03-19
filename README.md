@@ -2,7 +2,7 @@
 
 本项目通过纯python代码，对MNIST数据集只用numpy及gzip库实现手写数字识别  
 利用GPU加速训练过程，实现了完整的正向传播、反向传播和Adam优化算法
-
+在使用时，请将所有文件放入同一文件夹目录下
 ## 环境
 - Python 3.13
 - CUDA 12.8
@@ -28,6 +28,7 @@
 
 This project implements handwritten digit recognition on the MNIST dataset using pure Python code, relying solely on the numpy and gzip libraries
 Utilizing GPU to accelerate the training process, we have implemented the complete forward propagation, backward propagation, and Adam optimization algorithm
+When using, please place all files in the same folder directory
 
 environment
 - Python 3.13

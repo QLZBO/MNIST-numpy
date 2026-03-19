@@ -1,16 +1,25 @@
-# MNIST-numpy/n
+# MNIST-numpy
 
-本项目通过纯python代码，对MNIST数据集只用numpy及gzip库实现手写数字识别/n
-利用GPU加速训练过程，实现了完整的正向传播、反向传播和Adam/n
+本项目通过纯python代码，对MNIST数据集只用numpy及gzip库实现手写数字识别  
+利用GPU加速训练过程，实现了完整的正向传播、反向传播和Adam优化算法
+
+## 环境
+- Python 3.13
+- CUDA 12.8
+- CuPy (GPU加速的NumPy兼容库)
+
+## 网络架构与算法
+- 输入层 784个神经元
+- 第一隐藏层 100个神经元 (ReLU激活函数)
+- 第二隐藏层 200个神经元 (ReLU激活函数)  
+- 输出层 10个神经元 (Softmax激活函数)
+- 优化算法 adam
 
 
-环境配置/n
-Python 3.13/n
-CUDA12.8/n
-CuPy
+### 安装依赖
+```bash
+# 安装CuPy（CUDA 12.x版本）
+pip install cupy-cuda12x
 
-网络架构与算法/n
-100个第一隐藏层，200个第二隐藏层/n
-前两个隐藏层使用relu 输出层使用softmax函数以达到更好的效率/n
-使用adam进行参数更新
-
+# 如果无GPU，可使用NumPy版本
+# 将代码开头的 import cupy as np 改为 import numpy as np 即可

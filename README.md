@@ -17,6 +17,29 @@
 
 
 ### 安装依赖
-安装CuPy（CUDA 12.x版本）
-pip install cupy-cuda12x
-若无法使用cupy，将import cupy as np 改成 import numpy as np 即可
+- 安装CuPy（CUDA 12.x版本）
+- pip install cupy-cuda12x -i https://pypi.tuna.tsinghua.edu.cn/simple
+- 若无法使用cupy，将import cupy as np 改成 import numpy as np 即可
+
+- # MNIST-numpy
+
+This project implements handwritten digit recognition on the MNIST dataset using pure Python code, relying solely on the numpy and gzip libraries
+Utilizing GPU to accelerate the training process, we have implemented the complete forward propagation, backward propagation, and Adam optimization algorithm
+
+environment
+- Python 3.13
+- CUDA 12.8
+- CuPy (GPU-accelerated NumPy compatible library)
+
+## Network Architecture and Algorithms
+- Input layer: 784 neurons
+- The first hidden layer has 100 neurons (with ReLU activation function)
+- Second hidden layer: 200 neurons (ReLU activation function)
+- Output layer: 10 neurons (with Softmax activation function)
+- Optimization algorithm: Adam
+
+
+### Install dependencies
+- Install CuPy (CUDA version 12.x)
+- pip install cupy-cuda12x
+- If cupy cannot be used, simply replace "import cupy as np" with "import numpy as np"

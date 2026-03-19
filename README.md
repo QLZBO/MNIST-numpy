@@ -20,8 +20,11 @@
 - 安装CuPy（CUDA 12.x版本）
 - pip install cupy-cuda12x -i https://pypi.tuna.tsinghua.edu.cn/simple
 - 若无法使用cupy，将import cupy as np 改成 import numpy as np 即可
+- 
+### 数据来源与感谢
+该数据集由 Yann LeCun 的官方网站 http://yann.lecun.com/exdb/mnist/
 
-- # MNIST-numpy
+ # MNIST-numpy 
 
 This project implements handwritten digit recognition on the MNIST dataset using pure Python code, relying solely on the numpy and gzip libraries
 Utilizing GPU to accelerate the training process, we have implemented the complete forward propagation, backward propagation, and Adam optimization algorithm
@@ -38,8 +41,10 @@ environment
 - Output layer: 10 neurons (with Softmax activation function)
 - Optimization algorithm: Adam
 
-
 ### Install dependencies
 - Install CuPy (CUDA version 12.x)
 - pip install cupy-cuda12x
 - If cupy cannot be used, simply replace "import cupy as np" with "import numpy as np"
+
+### Data Source and Acknowledgment 
+- This dataset is sourced from Yann LeCun's official website at http://yann.lecun.com/exdb/mnist/
